@@ -74,11 +74,10 @@
 }
 
 .breadcrumbs a {
-    padding: 12px 40px 12px 30px;
+    padding: 12px 20px;
     color: #1A2B2A;
     text-decoration: none;
-    font-family: "Times New Roman", serif;
-    border-right: 2px solid #FFFFFF;
     border-radius: 50%;
     box-shadow: inset -2px 0 0 #000000, inset -6px 0 6px rgba(0, 0, 0, 0.2);
 }
+
