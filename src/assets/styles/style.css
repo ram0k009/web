@@ -2,10 +2,94 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
 }
 
-.test {
-    color: red !important;
+.h1 {
+    font-size: 64px;
+    color: #1F3F68;
 }
+
+.h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.form {
+    background-image: url('/src/assets/img/form-bg.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button {
+    background: linear-gradient(135deg, #2F5FE3, #8A4DD8);
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.breadcrumbs {
+    display: flex;
+    background: linear-gradient(to bottom, #e3eeed, #5c9792);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a {
+    padding: 12px 40px 12px 30px;
+    color: #1A2B2A;
+    text-decoration: none;
+    font-family: "Times New Roman", serif;
+    border-right: 2px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: inset -2px 0 0 #000000, inset -6px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.row { display: flex; gap: 30px; }
+.col { flex: 1; }
+.links li, .tabs li { display: inline-block; margin-right: 20px; }
+.links, .tabs, .stats, .footer-cols { list-style: none; padding: 0; }
+.footer-cols { display: flex; justify-content: space-between; }
+.footer-cols li { text-align: center; }
+.stats { display: flex; gap: 40px; }
+.stats strong { font-size: 40px; }
+.center { text-align: center; }
+img { max-width: 100%; }
