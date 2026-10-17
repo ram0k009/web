@@ -1,7 +1,5 @@
 @import "reset.css";
 @import "componets/index.css";
-@import "ui/index.css";
-
 
 html {
   font-family: 'HelveticaNeueCyr', sans-serif;
@@ -9,4 +7,22 @@ html {
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;   
+  color: #111B3A;
+  background: #F4F6FB;
+}
+
+main {
+  flex: 1;                  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }

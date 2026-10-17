@@ -1,0 +1,122 @@
+.hero {
+  position: relative;
+  min-height: 900px;
+  padding-top: 170px;
+  overflow: hidden;        
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;              
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  max-width: 640px;
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: 600;
+}
+
+.hero__accent {
+  color: #2F5FE3;
+}
+
+.hero__text {
+  max-width: 640px;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.hero__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-sizing: border-box;
+  width: 676px;
+  margin-top: 56px;
+  padding: 24px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
+}
+
+.hero__form-title {
+  max-width: 460px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.hero__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr 130px;
+  align-items: end;
+  gap: 28px;
+}
+
+.hero__label {
+  display: grid;
+  gap: 8px;
+  font-size: 12px;
+  color: #6B7280;
+}
+
+.hero__phone-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #D0D5DD;
+}
+
+.hero__input {
+  width: 100%;
+  padding: 6px 0;
+  border: 0;
+  border-bottom: 1px solid #D0D5DD;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #111B3A;
+}
+
+.hero__phone-field .hero__input {
+  border-bottom: 0;
+}
+
+.hero__button {
+  height: 60px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #2F5FE3;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.hero__phones {
+  position: absolute;
+  top: 398px;
+  left: calc(50% + 419px);
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 14px 24px;
+  width: 624px;
+  height: 1977px;
+  transform: translate(-50%, -50%) rotate(-12deg);
+}
+
+.hero__phone {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}

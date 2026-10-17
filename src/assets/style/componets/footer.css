@@ -1,0 +1,50 @@
+.footer {
+  padding: 0 0 24px;
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-sizing: border-box;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #0E1426;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+
+.footer__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.footer__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+.footer__value {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer__note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+}
