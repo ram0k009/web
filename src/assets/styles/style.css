@@ -83,13 +83,36 @@
     box-shadow: inset -2px 0 0 #000000, inset -6px 0 6px rgba(0, 0, 0, 0.2);
 }
 
-.row { display: flex; gap: 30px; }
+.row { 
+    display: flex; 
+    gap: 30px; 
+}
+
 .col { flex: 1; }
-.links li, .tabs li { display: inline-block; margin-right: 20px; }
-.links, .tabs, .stats, .footer-cols { list-style: none; padding: 0; }
-.footer-cols { display: flex; justify-content: space-between; }
+.links li, .tabs li { 
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+.links, .tabs, .stats, .footer-cols { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.footer-cols { 
+    display: flex; 
+    justify-content: space-between; 
+}
+
 .footer-cols li { text-align: center; }
-.stats { display: flex; gap: 40px; }
+
+.stats { 
+    display: flex; 
+    gap: 40px; 
+}
+
 .stats strong { font-size: 40px; }
+
 .center { text-align: center; }
+
 img { max-width: 100%; }
