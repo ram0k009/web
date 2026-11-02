@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "watch": "sass src/assets/style/componets/index.scss src/assets/style/index.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.107.1"
+  }
+}
