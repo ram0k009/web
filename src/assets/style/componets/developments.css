@@ -97,48 +97,75 @@
   .development {
     padding: 40px 0;
   }
-  
+
   .development__container {
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
     padding: 0 20px;
   }
-  
+
   .development__info {
     max-width: 100%;
   }
-  
+
   .development__title {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: 16px;
   }
-  
+
   .development__subtitle {
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 24px;
   }
-  
+
   .development__group {
     margin-bottom: 24px;
     max-width: 100%;
   }
-  
+
+  .development__label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
   .development__text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
   }
-  
+
   .development__nav {
     width: 100%;
   }
-  
-  .development__menu a {
-    width: 100%;
-    border-bottom: 1px solid #E5E7EB;
-    padding: 16px 0;
+
+  /* список услуг */
+  .development__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-  
-  .development__menu a:hover {
-    border-bottom: 2px solid #2F5FE3;
+
+  .development__menu li {
+    border: 0;
+    padding: 0;
+  }
+
+  .development__menu a {
+    display: inline-flex;       
+    align-items: center;
+    gap: 12px;
+    width: auto;                 
+    padding: 0;                 
+    border: 0;                   
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .development__menu a:hover span {
+    font-weight: 700;
+    border-bottom: 1px solid #2F5FE3;
   }
 }

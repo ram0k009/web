@@ -175,15 +175,25 @@
   .hero__stage {
     order: 3;
     position: relative;
-    height: 485px;            
-    margin: 28px -20px 0;    
+    height: 500px;
+    margin: 28px -20px 0;
     overflow: hidden;
   }
 
   .hero__phones {
-    top: 415px;               
-    left: calc(50% + 65px);
-    transform: translate(-50%, -50%) rotate(-12deg) scale(0.42);
+    top: 24px;                       
+    left: calc(50% - 30px);
+    width: 69vw;                     
+    height: auto;
+    grid-template-rows: none;
+    gap: 7px 12px;
+    transform: translateX(-50%) rotate(-12deg);
+    transform-origin: 50% 0;
+  }
+
+  .hero__phone {
+    height: auto;
+    border-radius: 12px;
   }
 
   .hero__form {
