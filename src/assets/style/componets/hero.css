@@ -141,6 +141,86 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 426px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 60px;
+    min-height: 0;
+  }
+
+  .hero__content {
+    display: contents;      
+  }
+
+  .hero__title {
+    order: 1;
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 40px;      
+    font-weight: 700;
+    letter-spacing: 0.33px;
+  }
+
+  .hero__text {
+    order: 2;
+    max-width: 100%;
+    margin-top: 24px;       
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+  }
+
+  .hero__stage {
+    order: 3;
+    position: relative;
+    height: 485px;            
+    margin: 28px -20px 0;    
+    overflow: hidden;
+  }
+
+  .hero__phones {
+    top: 415px;               
+    left: calc(50% + 65px);
+    transform: translate(-50%, -50%) rotate(-12deg) scale(0.42);
+  }
+
+  .hero__form {
+    order: 4;
+    margin-top: -60px;      
+    max-width: 382px;
+    padding: 32px;
+    gap: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 24px rgba(0,0,0,.16), 0 0 2px rgba(0,0,0,.08);
+  }
+
+  .hero__form-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.38px;
+  }
+
+  .hero__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .hero__button {
+    align-self: flex-start;
+    width: auto;
+    height: 48px;
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
 @media (min-width: 426px) and (max-width: 1024px) {
   .hero {
     min-height: 800px;
@@ -237,138 +317,3 @@
   }
 }
 
-@media (max-width: 425px) {
-  .hero {
-    padding: 100px 0 60px;
-    min-height: auto;
-  }
-
-  .hero__content {
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-  }
-
-  .hero__title {
-    font-size: 28px;
-    line-height: 1.4;
-    margin-bottom: 16px;
-    max-width: 100%;
-    order: 1;
-  }
-
-  .hero__text {
-    font-size: 15px;
-    line-height: 20px;
-    margin-bottom: 24px;
-    max-width: 100%;
-    order: 2;
-  }
-
-  .hero__stage {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    margin-top: -80px;
-    order: 3;
-  }
-
-  .hero__phones {
-    position: relative;
-    transform: rotate(-12deg);
-    width: 100%;
-    max-width: 295px;
-    height: 380px;
-    overflow: hidden;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
-  }
-
-  .hero__phone {
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    object-fit: cover;
-  }
-
-  .hero__form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    background: #FFFFFF;
-    border-radius: 12px;
-    padding: 24px 20px;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: -60px;
-    z-index: 5;
-    order: 4;
-  }
-
-  .hero__form-title {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #101828;
-    margin: 0;
-  }
-
-  .hero__fields {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .hero__label {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    font-size: 12px;
-    color: #6B7280;
-  }
-
-  .hero__phone-field {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border-bottom: 1px solid #D0D5DD;
-  }
-
-  .hero__input {
-    width: 100%;
-    padding: 6px 0;
-    border: 0;
-    border-bottom: 1px solid #D0D5DD;
-    outline: none;
-    background: transparent;
-    font-size: 14px;
-    color: #111B3A;
-  }
-
-  .hero__phone-field .hero__input {
-    border-bottom: 0;
-  }
-
-  .hero__button {
-    height: 48px;
-    width: 100%;
-    border: 0;
-    border-radius: 6px;
-    background: #2F5FE3;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: center;
-  }
-
-  .hero__phone:nth-child(5),
-  .hero__phone:nth-child(6) {
-    display: none;
-  }
-}
