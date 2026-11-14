@@ -1,0 +1,83 @@
+.stages {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+
+  &__container { max-width: 1224px; margin: 0 auto; padding: 0 16px; }
+  &__title { font-family: 'Inter', sans-serif; font-size: 36px; font-weight: 700; line-height: 1.44; letter-spacing: 0.33px; color: #101828; margin: 0 0 48px 0; }
+  &__grid { display: flex; justify-content: space-between; gap: 24px; }
+  &__column { display: flex; flex-direction: column; gap: 24px; width: 392px; }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding: 32px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    height: 172px;
+    justify-content: center;
+
+    &::before { position: absolute; top: 50%; right: 20px; transform: translateY(-50%); font-family: 'Inter', sans-serif; font-size: 220px; font-weight: 700; color: #F4F6FB; line-height: 1; z-index: 0; pointer-events: none; }
+  }
+
+  &__card--1::before { content: "1"; }
+  &__card--2::before { content: "2"; }
+  &__card--3::before { content: "3"; }
+  &__card--4::before { content: "4"; }
+  &__card--5::before { content: "5"; }
+  &__card--6::before { content: "6"; }
+
+  &__card-head { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; position: relative; z-index: 1; }
+  &__icon { width: 32px; height: 32px; object-fit: contain; flex-shrink: 0; }
+  &__card-title { font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; color: #101828; margin: 0; }
+  &__text { font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.5; color: #667085; margin: 0; position: relative; z-index: 1; max-width: 85%; }
+
+  @media (min-width: 427px) and (max-width: 1024px) {
+    padding: 56px 0;
+    &__container { padding: 0 40px; }
+    &__title { font-size: 28px; margin-bottom: 28px; }
+    &__grid { flex-direction: column; gap: 24px; }
+    &__column { width: 100%; }
+    &__card { padding: 24px; height: auto; min-height: 172px; }
+  }
+
+  @media (max-width: 426px) {
+    padding: 40px 0;
+
+    &__container {
+        padding: 0 24px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__column {
+        width: 100%;
+        gap: 16px;
+    }
+
+    &__card {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        min-height: 172px;
+    }
+
+    &__card::before {
+        font-size: 140px;
+    }
+  }
+}

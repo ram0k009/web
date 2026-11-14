@@ -32,10 +32,7 @@
   &__menu {
     display: flex;
     gap: 24px;
-
-    a {
-      font-weight: 500;
-    }
+    a { font-weight: 500; }
   }
 
   &__contacts {
@@ -51,9 +48,7 @@
     color: #2F5FE3;
   }
 
-  &__toggle {
-    display: none;
-  }
+  &__toggle { display: none; }
 
   &__burger,
   &__close,
@@ -70,10 +65,7 @@
     width: 100%;
     z-index: 1000;
 
-    .header__wrap {
-      max-width: 100%;
-      width: 100%;
-    }
+    .header__wrap { max-width: 100%; width: 100%; }
 
     .header__card {
       width: 100%;
@@ -90,7 +82,11 @@
     }
 
     .header__contacts {
-      display: none;
+      position: absolute;
+      right: 24px;
+      gap: 0;
+      .header__contact { display: none; }
+      .header__contact:last-child { display: flex; }   
     }
 
     .header__burger {
@@ -110,9 +106,7 @@
       }
     }
 
-    .header__logo {
-      font-size: 16px;
-    }
+    .header__logo { font-size: 16px; }
 
     .header__nav {
       display: none; 
@@ -131,9 +125,7 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
-    .header__toggle:checked ~ .header__nav {
-      display: flex;
-    }
+    .header__toggle:checked ~ .header__nav { display: flex; }
 
     .header__close {
       display: block;
@@ -177,44 +169,16 @@
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     top: 12px;
     padding: 0 12px;
 
-    .header__card {
-      padding: 14px 16px;
-      justify-content: center;
-    }
-
-    .header__logo {
-      font-size: 16px;
-    }
-
-    .header__nav {
-      height: 642px;
-      border-radius: 12px;
-    }
-
-    .header__logo--mobile {
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: -0.15px;
-      color: #2D66EE;
-      margin-bottom: 48px;
-    }
-
-    .header__menu {
-      gap: 32px;
-      margin-bottom: 48px;
-
-      a {
-        font-size: 17px;
-      }
-    }
-
-    .header__close {
-      top: 20px;
-      right: 20px;
-    }
+    .header__card { padding: 14px 16px; justify-content: center; }
+    .header__logo { font-size: 16px; }
+    .header__nav { height: 642px; border-radius: 12px; }
+    .header__logo--mobile { font-size: 20px; font-weight: 700; letter-spacing: -0.15px; color: #2D66EE; margin-bottom: 48px; }
+    .header__menu { gap: 32px; margin-bottom: 48px; a { font-size: 17px; } }
+    .header__close { top: 20px; right: 20px; }
+    .header__contacts { display: none; }
   }
 }
