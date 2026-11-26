@@ -22,7 +22,7 @@
     &__info, &__form { max-width: 100%; }
     }
 
-    @media (max-width: 426px) {
+    @media (max-width: 767px) {
     padding: 40px 0;
     &__container { padding: 0 24px; }
     &__fields { grid-template-columns: 1fr; gap: 24px; }

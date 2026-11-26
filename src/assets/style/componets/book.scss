@@ -32,7 +32,7 @@
     &__img { max-width: 260px; }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 767px) {
     grid-template-columns: minmax(0, 1fr);
     padding: 40px 20px;
 
